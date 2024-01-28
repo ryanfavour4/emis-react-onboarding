@@ -1,0 +1,123 @@
+.loginBox {
+    padding-block: 4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.block1 {
+    width: 70%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.block1 h2 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.block1 .loginDescDiv p {
+    line-height: 190%;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.block1 .loginDescDiv p::before {
+    content: "";
+    display: inline-block;
+    height: 60%;
+    width: 0.2rem;
+    background: var(--primary-color);
+    position: absolute;
+    left: -0.1rem;
+    top: 15%;
+}
+
+.block1 form {
+    flex-direction: column;
+}
+
+.block1 form p {
+    margin-top: 2rem;
+}
+
+.block1 form p a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.illustratorBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.illustratorBlock img {
+    max-width: 480px;
+    object-fit: cover;
+}
+
+.illustratorBlock > div,
+.mobileBlockText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.illustratorBlock > div,
+.mobileBlockText p {
+    max-width: 450px;
+    line-height: 190%;
+}
+
+.illustratorBlock > div h3 {
+    text-wrap: balance;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.mobileBlockText h3 {
+    text-wrap: balance;
+}
+
+.mobileBlockText {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .loginBox {
+        padding-inline: 1rem;
+        display: flex;
+        gap: 0;
+        flex-direction: column-reverse;
+    }
+
+    .block1 {
+        width: 100%;
+        margin-left: unset;
+        margin-top: 0.5rem;
+    }
+
+    .mobileBlockText {
+        margin-top: 4rem;
+        display: flex;
+    }
+
+    .illustratorBlock img {
+        max-width: 280px;
+    }
+
+    .illustratorBlock > div {
+        display: none;
+    }
+}

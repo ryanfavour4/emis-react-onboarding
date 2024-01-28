@@ -1,0 +1,167 @@
+.onBoarding {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    min-height: 100vh;
+}
+
+.onBoardingLeftCol {
+    background: var(--pale-pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 2.2rem;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.topArea {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.logoArea img {
+    max-width: 10rem;
+}
+
+.checkedPages > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+li.checkPageList {
+    color: var(--body-text);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+li.checkPageList > img {
+    width: 1.3rem;
+    height: 1.3rem;
+    aspect-ratio: 1/1;
+    margin-top: 0.4rem;
+    object-fit: cover;
+}
+
+li.checkPageList h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+li.inactiveCheckPageList {
+    color: var(--ashy);
+    user-select: none;
+    cursor: context-menu;
+}
+
+li.inactiveCheckPageList h3 {
+    color: var(--ashy);
+}
+
+.bottomArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 10%;
+    font-weight: 600;
+}
+
+.bottomArea > a {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.onBoardingRightCol {
+    height: 100vh;
+    padding: 1.5rem 2.2rem;
+}
+
+.onBoardingRightColScroller {
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.skipHeader {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.mobileProgressTopArea {
+    display: none;
+}
+
+.onBoardingRightCol .bottomArea {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .onBoarding {
+        grid-template-columns: 1fr;
+    }
+
+    .mobileProgressTopArea {
+        display: block;
+    }
+
+    .topArea {
+        display: none;
+    }
+
+    .onBoardingLeftCol {
+        gap: 0rem;
+        padding: 0.6rem 1rem;
+        height: auto;
+    }
+
+    .onBoardingLeftCol .bottomArea {
+        display: none;
+    }
+
+    .mobileCheckedPages > ul {
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        margin-block: 1rem;
+        padding-inline: 0.5rem;
+    }
+
+    .mobileCheckedPages > ul > .mobileCheckPageList {
+        font-weight: 600;
+        color: var(--primary-color);
+        position: relative;
+    }
+
+    .mobileCheckedPages > ul > .mobileCheckPageList::before {
+        content: "";
+        background: var(--pale-orange);
+        position: absolute;
+        left: -16px;
+        bottom: 25%;
+        width: 14px;
+        height: 14px;
+        rotate: 90deg;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .onBoardingRightCol {
+        height: 100vh;
+        padding: 0.5rem;
+    }
+
+    .onBoardingRightCol .bottomArea {
+        color: var(--ashy);
+    }
+}

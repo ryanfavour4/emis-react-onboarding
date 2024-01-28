@@ -1,0 +1,71 @@
+.PersonalInformation {
+    padding-block: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+.PersonalInformationTopTitle {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.PersonalInformationTopTitle h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.PersonalInformationTopTitle p {
+    line-height: 180%;
+    position: relative;
+    padding-left: 1rem;
+    max-width: 420px;
+}
+
+.PersonalInformationTopTitle p::before {
+    content: "";
+    display: inline-block;
+    height: 60%;
+    width: 0.2rem;
+    background: var(--primary-color);
+    position: absolute;
+    left: -0.1rem;
+    top: 15%;
+}
+
+.PersonalInformationWrapper form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.PersonalInformationWrapper form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.selectAndUpload {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 0.3rem;
+}
+
+.selectAndUpload > select {
+    padding: 0.8rem 0.7rem;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    background: var(--light);
+    display: inline-block;
+    outline: 1px solid var(--dark-slate-grey);
+}
+
+@media only screen and (max-width: 650px) {
+    .selectAndUpload {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin-top: 0.3rem;
+    }
+}

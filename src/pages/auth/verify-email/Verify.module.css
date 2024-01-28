@@ -1,0 +1,25 @@
+.buttonGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.verifyBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+.verifyBox img {
+    width: 130px;
+}
+
+.verifyBox p {
+    max-width: 1000px;
+    color: var(--grey);
+}

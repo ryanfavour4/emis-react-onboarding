@@ -1,0 +1,77 @@
+.dashboardLayout {
+    background: #000;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.dashboardLayout > aside {
+    background: wheat;
+    width: 265px;
+    position: relative;
+}
+
+.dashboardLayout > aside > nav {
+    background: salmon;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 265px;
+    z-index: 2;
+}
+
+.dashboardLayout > div {
+    background: whitesmoke;
+    flex: 1;
+    width: 100%;
+}
+
+.dashboardLayout > aside.closeAsideDesktop {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 1%;
+}
+
+.dashboardLayout > aside.closeAsideDesktop:hover {
+    width: 1%;
+}
+
+.dashboardLayout > aside.closeAsideDesktop > nav {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateX(-97%);
+}
+
+.dashboardLayout > aside.closeAsideDesktop:hover > nav {
+    transform: translateX(-0%);
+}
+
+/************************ /
+/**** MEDIA QUERIES **** //
+/************************/
+@media only screen and (max-width: 990px) {
+    .dashboardLayout > .leftNavCol {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(var(--dark-rgb) / 0.2);
+        backdrop-filter: blur(1px);
+        transform: translateX(-0%);
+    }
+
+    .dashboardLayout > .leftNavCol.openAsideMobile {
+        transform: translateX(-100%);
+        z-index: 2;
+    }
+
+    .dashboardLayout > aside.closeAsideDesktop:hover > nav {
+        transform: translateX(-100%);
+    }
+
+    .dashboardLayout > aside.closeAsideDesktop > nav {
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,47 @@
+.BankDetails {
+    padding-block: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+.BankDetailsTopTitle {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.BankDetailsTopTitle h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.BankDetailsTopTitle p {
+    line-height: 180%;
+    position: relative;
+    padding-left: 1rem;
+    max-width: 420px;
+}
+
+.BankDetailsTopTitle p::before {
+    content: "";
+    display: inline-block;
+    height: 60%;
+    width: 0.2rem;
+    background: var(--primary-color);
+    position: absolute;
+    left: -0.1rem;
+    top: 15%;
+}
+
+.BankDetailsWrapper form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.BankDetailsWrapper form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}

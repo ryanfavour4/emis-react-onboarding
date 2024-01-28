@@ -1,0 +1,28 @@
+.LevelNavbar {
+    background: transparent;
+}
+
+.logoBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 1.1rem;
+}
+
+.logoBox img {
+    width: 11rem;
+}
+
+.levelBarBox {
+    background: var(--grey);
+    height: 8px;
+}
+
+.levelBarBox span {
+    display: block;
+    background: var(--primary-color);
+    width: 50%;
+    height: 8px;
+}
