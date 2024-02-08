@@ -1,0 +1,28 @@
+0000000000000000000000000000000000000000 2fc0518f3bb41ea7669368174016b1513079b18f ryanfavour4 <ryanfave022@gmail.com> 1705652607 +0100	branch: Created from origin/master
+2fc0518f3bb41ea7669368174016b1513079b18f ae54aafaaf14898183f5a4e2d695b019f28c0a15 ryanfavour4 <ryanfave022@gmail.com> 1705652649 +0100	commit: reconfigured stylings and responsiveness
+ae54aafaaf14898183f5a4e2d695b019f28c0a15 4b2408511103349309d025a4d53c39196412566f ryanfavour4 <ryanfave022@gmail.com> 1705674061 +0100	commit: Registeration type page
+4b2408511103349309d025a4d53c39196412566f 288210b9d9260e5eceaa70122640d56a230c1b82 ryanfavour4 <ryanfave022@gmail.com> 1705742074 +0100	commit: dashboard routing and structure complete
+288210b9d9260e5eceaa70122640d56a230c1b82 bd4b0f513d04143bff473d999dc7064a72bdd421 ryanfavour4 <ryanfave022@gmail.com> 1705742680 +0100	pull: Merge made by the 'ort' strategy.
+bd4b0f513d04143bff473d999dc7064a72bdd421 84e1af179bb1ebcc6a50bf47b538a8e02c489bf5 ryanfavour4 <ryanfave022@gmail.com> 1705742724 +0100	merge origin/master: Merge made by the 'ort' strategy.
+84e1af179bb1ebcc6a50bf47b538a8e02c489bf5 f174a8abd5edcf88d55aceb73f5080aff17ab649 ryanfavour4 <ryanfave022@gmail.com> 1705911018 +0100	commit: dashboard side bar toggles feature for mobile and desktop
+f174a8abd5edcf88d55aceb73f5080aff17ab649 0d5033092478cef8289c4b505cd2a46ae3b8620a ryanfavour4 <ryanfave022@gmail.com> 1705928606 +0100	commit: log in function up
+0d5033092478cef8289c4b505cd2a46ae3b8620a 86bf35d2d48dcd0d9439499864c3e1ffbfcb845b ryanfavour4 <ryanfave022@gmail.com> 1705928669 +0100	commit: log in function up
+86bf35d2d48dcd0d9439499864c3e1ffbfcb845b f4ca1b707a3a2501621977dede1b0f0f664bd674 ryanfavour4 <ryanfave022@gmail.com> 1705929192 +0100	commit: log in function up
+f4ca1b707a3a2501621977dede1b0f0f664bd674 a1ffed3a1e4f0190cbc105f2826af0a5bc30e6ec ryanfavour4 <ryanfave022@gmail.com> 1705929210 +0100	commit: log in function up
+a1ffed3a1e4f0190cbc105f2826af0a5bc30e6ec e30d1cee2c65e7ccb35067a31b60be66b40717dc ryanfavour4 <ryanfave022@gmail.com> 1706040976 +0100	commit: login signup
+e30d1cee2c65e7ccb35067a31b60be66b40717dc cfb200b822a1cde029c07f898934017613efce28 ryanfavour4 <ryanfave022@gmail.com> 1706041329 +0100	pull: Merge made by the 'ort' strategy.
+cfb200b822a1cde029c07f898934017613efce28 38424aa12a1e8a238171c84dd95013811b2553ee ryanfavour4 <ryanfave022@gmail.com> 1706041388 +0100	merge origin/master: Merge made by the 'ort' strategy.
+38424aa12a1e8a238171c84dd95013811b2553ee acf90d7c3617568cda4ffac3d96542a34a5d8d25 ryanfavour4 <ryanfave022@gmail.com> 1706088392 +0100	commit: register adjustment
+acf90d7c3617568cda4ffac3d96542a34a5d8d25 12f1650ad11d1a4758235af12d820b91ee685fa5 ryanfavour4 <ryanfave022@gmail.com> 1706089185 +0100	pull: Fast-forward
+12f1650ad11d1a4758235af12d820b91ee685fa5 d8900dbe5a8d0ab354b30c8229e356dde40f14c4 ryanfavour4 <ryanfave022@gmail.com> 1706195151 +0100	commit: personal information done and responsive
+d8900dbe5a8d0ab354b30c8229e356dde40f14c4 8ceaa1221f29c174889649e82373b2498871b9bf ryanfavour4 <ryanfave022@gmail.com> 1706195828 +0100	commit: onboarding protection route
+8ceaa1221f29c174889649e82373b2498871b9bf 52ab3635756de91627348c32a0ba297f5288caae ryanfavour4 <ryanfave022@gmail.com> 1706404910 +0100	commit: DONE✅
+52ab3635756de91627348c32a0ba297f5288caae eebf0c52c63ebf2fed128ed12252e133ca8f4506 ryanfavour4 <ryanfave022@gmail.com> 1706404954 +0100	pull --tags origin code-ammendment: Merge made by the 'ort' strategy.
+eebf0c52c63ebf2fed128ed12252e133ca8f4506 e9cec00bc403a93a7f7b46442ed923abdc54b6b0 ryanfavour4 <ryanfave022@gmail.com> 1706405010 +0100	commit: DONE✅
+e9cec00bc403a93a7f7b46442ed923abdc54b6b0 cbb462a0e8b863a47124199d9d78e701188f21dd ryanfavour4 <ryanfave022@gmail.com> 1706406492 +0100	commit: DONE✅
+cbb462a0e8b863a47124199d9d78e701188f21dd 3c13f29ce1850e6a3f5e551fdd55c274b4bfd9b8 ryanfavour4 <ryanfave022@gmail.com> 1706692799 +0100	commit: top bar created and responsive
+3c13f29ce1850e6a3f5e551fdd55c274b4bfd9b8 abe99387f2fc583f3ca28f3fef077a18c97456c4 ryanfavour4 <ryanfave022@gmail.com> 1706692874 +0100	pull --tags origin code-ammendment: Merge made by the 'ort' strategy.
+abe99387f2fc583f3ca28f3fef077a18c97456c4 13d5b035b5b00466d35f29aaaa02fe024b35cf59 ryanfavour4 <ryanfave022@gmail.com> 1706743813 +0100	commit: fighting with sidebar flows logic
+13d5b035b5b00466d35f29aaaa02fe024b35cf59 c13709a00548e46fe4824e71ca98c3220e658d8b ryanfavour4 <ryanfave022@gmail.com> 1706743825 +0100	pull --tags origin code-ammendment: Merge made by the 'ort' strategy.
+c13709a00548e46fe4824e71ca98c3220e658d8b 4cb514b69b8b02509f8f3e5556384ec85afc8d84 ryanfavour4 <ryanfave022@gmail.com> 1706744782 +0100	commit: fighting with sidebar flows logic
+4cb514b69b8b02509f8f3e5556384ec85afc8d84 9f221723a28c370b074e1ff66029212597798693 ryanfavour4 <ryanfave022@gmail.com> 1706745203 +0100	commit: live test
