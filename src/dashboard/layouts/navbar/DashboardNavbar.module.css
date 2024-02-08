@@ -1,29 +1,199 @@
-.LevelNavbar {
-    background: transparent;
-    /* box-shadow: 2px 2px 4px 2px var(--grey); */
-}
-
 .logoBox {
+    background: var(--white);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    gap: 2rem;
     padding-block: 1.1rem;
-
-    img {
-        width: 11rem;
-    }
 }
 
-.levelBarBox {
-    background: var(--grey);
-    height: 8px;
+.logoBox img {
+    width: 8rem;
+}
 
-    span {
-        display: block;
-        background: var(--primary-color);
-        width: 50%;
-        height: 8px;
+.logoBox svg {
+    cursor: pointer;
+}
+
+.finderAndBioCard {
+    /* border: 2px solid red; */
+}
+
+.finder {
+    background: linear-gradient(
+        90deg,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(0, 37, 105, 1) 100%
+    );
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 1rem;
+    z-index: 2;
+}
+
+.finderInputBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-primary-color);
+    width: 90%;
+    padding: 0.4rem 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.finderInputBox:focus-within {
+    box-shadow: 0px 0px 1px 1px rgb(var(--secondary-color-rgb, 0.1)),
+        0px 0px 1px 2px rgb(var(--grey-rgb) / 0.7),
+        0px 0px 1px 2px rgb(var(--secondary-color-rgb, 0.2));
+}
+
+.finderInputBox input {
+    background: transparent;
+    width: 90%;
+    border: 0;
+    padding-inline: 0.2rem 0.4rem;
+    color: var(--white);
+}
+
+.finderInputBox input::placeholder {
+    color: var(--light);
+}
+
+.finderInputBox input:focus {
+    box-shadow: none;
+}
+
+.finderInputBox a {
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    border-radius: 0.2rem;
+}
+
+.finderDropDown {
+    position: absolute;
+    bottom: -26%;
+    background: rgba(var(--dark-rgb) / 0.6);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    padding-block: 0px 1px;
+    padding-inline: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 30px 30px;
+    border: 1px solid var(--dark);
+    border-top: 0;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.finderDropDown:hover {
+    -webkit-box-shadow: 0px 0px 69px 5px rgba(109, 149, 219, 1);
+    -moz-box-shadow: 0px 0px 69px 5px rgba(109, 149, 219, 1);
+    box-shadow: 0px 0px 69px 5px rgba(109, 149, 219, 1);
+    background: rgba(109, 149, 219, 1);
+    color: var(--white);
+    border: none;
+    bottom: -29%;
+    font-size: 1.2rem;
+}
+
+.bioCard {
+    background: url("../../../assets//images/night-sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bioCardCenterContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3rem;
+    gap: 1rem;
+    color: var(--white);
+    font-size: 0.9rem;
+    line-height: 110%;
+}
+
+.bioCardCenterContent img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+/*  */
+/* ????? ===================== REUSABLE ACCORDION COMPONENT =================== ?????? //
+ ????? ===================== REUSABLE ACCORDION COMPONENT =================== ?????? */
+.accordion {
+    box-shadow: 0px 2px 0px rgba(128, 128, 128, 0.219);
+}
+
+.accordionItem {
+    border-bottom: 1px solid var(--light);
+}
+
+.accordionButton {
+    width: 100%;
+    background-color: var(--white);
+    border: none;
+    border-bottom: 1px solid var(--dark);
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.accordionButton p:nth-child(1) {
+    max-width: 500px;
+    margin: 0 !important;
+}
+
+.accordionButton p {
+    margin: 0 !important;
+}
+
+.accordionIcon {
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+.accordionButton:hover {
+    background-color: var(--light);
+}
+
+.accordionContent {
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ??? !!!!! ??????  MEDIA QUERIES FOR TABLETS AND LESS !!!!! ??????? //
+/* ??? !!!!! ??????  MEDIA QUERIES FOR TABLETS AND LESS !!!!! ??????? */
+@media only screen and (max-width: 700px) {
+    .accordionButton {
+        p:nth-child(1) {
+            max-width: 88%;
+        }
     }
 }

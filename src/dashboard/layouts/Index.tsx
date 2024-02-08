@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import DashboardNavbar from "./navbar/DashboardNavbar";
 import s from "./Index.module.css";
 import useDashboardLayoutController from "./Index.controller";
-import Button from "../../components/buttons/Button";
+import Topbar from "./topbar/Topbar";
 
 export default function DashboardLayout() {
     const {
@@ -25,27 +25,20 @@ export default function DashboardLayout() {
                     !isDesktopAsideOpen &&
                     s.closeAsideDesktop
                 }
-                ${mobileAsideBool && isMobileAsideOpen && s.openAsideMobile} 
+                ${mobileAsideBool && !isMobileAsideOpen && s.openAsideMobile} 
                 `}
                 onClick={toggleMobileAside}
             >
-                <nav>
+                <nav onClick={(e) => e.stopPropagation()}>
                     <DashboardNavbar />
                 </nav>
             </aside>
             <div className={s.rightMainCol}>
-                <div className="">
-                    <button onClick={toggleMobileAside}>
-                        OPEN MOBILE SIDE BAR
-                    </button>
-                    <Button onClick={toggleMobileAside}>
-                        OPEN MOBILE SIDE BAR
-                    </Button>
-                    <br />
-                    <button onClick={toggleDesktopAside}>
-                        TOGGLE DESKTOP SIDE BAR
-                    </button>
-                </div>
+                {/* //???? ========================= TOP BAR ======================== */}
+                <Topbar
+                    toggleMobileAside={toggleMobileAside}
+                    toggleDesktopAside={toggleDesktopAside}
+                />
                 <Outlet />
             </div>
         </div>

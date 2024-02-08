@@ -1,0 +1,139 @@
+.topBar {
+    background: var(--white);
+    box-shadow: 0px 0px 6px 1px var(--grey);
+}
+
+.topBarWrapper {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-block: 0.8rem;
+}
+
+.leftTopBar {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.rightTopBar {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.searchInput {
+    border: none;
+    padding: 0.4rem 1rem;
+    width: 100%;
+}
+
+.searchInput:focus {
+    box-shadow: none;
+}
+
+.desktopMenuBars {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: var(--ashy);
+}
+
+.desktopMenuBars:hover {
+    border: 2px solid var(--ashy);
+}
+
+.desktopMenuBars:hover .buttonDropGroup {
+    height: auto;
+    border: 2px solid var(--ashy);
+    border-top: 2px solid transparent;
+    padding: 0.2rem;
+    opacity: 1;
+}
+
+.buttonDropGroup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.1rem;
+    background: var(--white);
+    border-radius: 0.5rem;
+    left: -2%;
+    right: -2%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+}
+
+.desktopMenuBars a {
+    border: 2px solid var(--ashy);
+    padding: 0.1rem 0.8rem;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    transition: all 0.1s step-end;
+}
+
+.desktopMenuBars a:hover {
+    border: 2px solid var(--dark-pale-orange);
+    background: var(--pale-orange);
+    color: var(--white);
+}
+
+.mobileMenuBars {
+    display: none;
+}
+
+.mobileMenuBars a {
+    padding: 0.1rem 0.8rem;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    border: 2px solid var(--dark-pale-orange);
+    background: var(--pale-orange);
+    color: var(--white);
+}
+
+.rightTopBar > .icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.rightTopBar > .icons svg {
+    cursor: pointer;
+}
+
+.rightTopBar > .icons svg:hover {
+    color: var(--dark);
+}
+
+.rightTopBar > .icons img {
+    width: 2.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 990px) {
+    .mobileMenuBars {
+        display: flex;
+    }
+
+    .desktopMenuBars {
+        display: none;
+    }
+}

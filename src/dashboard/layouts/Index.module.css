@@ -9,10 +9,31 @@
     background: wheat;
     width: 265px;
     position: relative;
+    min-height: 100vh;
 }
 
 .dashboardLayout > aside > nav {
-    background: salmon;
+    background: rgb(0, 17, 48);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(0, 37, 105, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(0, 37, 105, 1) 100%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(5, 0, 82, 1) 56%,
+        rgba(0, 37, 105, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001130",endColorstr="#002569",GradientType=1);
+    color: var(-white);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -20,6 +41,7 @@
     right: 0;
     width: 265px;
     z-index: 2;
+    overflow-y: auto;
 }
 
 .dashboardLayout > div {
